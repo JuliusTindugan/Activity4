@@ -139,3 +139,11 @@ ADD COLUMN registereddate DATE;
 
 ALTER TABLE invoices
 RENAME COLUMN paymentdate TO paymenttime;
+
+-- Remove Simba's appointment from the appointments table
+DELETE FROM appointments
+WHERE animalid = (
+    SELECT animalid
+    FROM animals
+    WHERE name = 'Simba'
+);
