@@ -153,3 +153,7 @@ WHERE animalid = (
 UPDATE Doctors
 SET dlastname = 'Reyes-Gonzales'
 WHERE dfirstname = 'Dr. Sofia';
+
+-- List the species that the veterinary catered.
+SELECT DISTINCT species
+FROM animals;
