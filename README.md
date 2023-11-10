@@ -1,3 +1,3 @@
 ## Collaborators
-- LastName, FirstName, MI
-- LastName, FirstName, MI
+- Tindugan, Julius C.
+- Lalong-Isip, Kristine Merylle M.
