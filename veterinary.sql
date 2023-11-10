@@ -157,3 +157,7 @@ WHERE dfirstname = 'Dr. Sofia';
 -- List the species that the veterinary catered.
 SELECT DISTINCT species
 FROM animals;
+
+-- List the total sales of the veterinary.
+SELECT SUM(totalamount) AS total_sales
+FROM invoices;
