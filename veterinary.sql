@@ -137,6 +137,7 @@ VALUES
 ALTER TABLE owners
 ADD COLUMN registereddate DATE;
 
+-- Rename the COLUMN NAME paymentdate to paymenttime.
 ALTER TABLE invoices
 RENAME COLUMN paymentdate TO paymenttime;
 
@@ -147,3 +148,8 @@ WHERE animalid = (
     FROM animals
     WHERE name = 'Simba'
 );
+
+-- UPDATE THE LASTNAME OF ‘Dr. Sofia’ to ‘Reyes-Gonzales’
+UPDATE Doctors
+SET dlastname = 'Reyes-Gonzales'
+WHERE dfirstname = 'Dr. Sofia';
